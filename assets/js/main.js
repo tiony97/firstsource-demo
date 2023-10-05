@@ -80,3 +80,55 @@ $(document).ready(function() {
         });
     });
 });
+
+//Menu dropown Accordion
+$(document).ready(function() {
+    $('.accordion .section-title').click(function(e) {
+        // Get current link value
+        var currentLink = $(this).attr('href');
+        if($(e.target).is('.active')) {
+            close_section();
+        }else {
+            close_section();
+        // Add active class to section title
+        $(this).addClass('active');
+        // Display the hidden content
+        $('.accordion ' + currentLink).slideDown(350).addClass('open');
+        }
+    e.preventDefault();
+    });
+        
+    function close_section() {
+        $('.accordion .section-title').removeClass('active');
+        $('.accordion .section-content').removeClass('open').slideUp(350);
+    }
+        
+});
+
+//Change sections on accordion click
+$(document).ready(function() {
+    $('.accordion .section-title-1').click(function() {
+        $('#acc-content-1').addClass('show');
+        $('.acc-content').not('#acc-content-1').removeClass('show');
+    });
+    $('.accordion .section-title-2').click(function() {
+        $('#acc-content-2').addClass('show');
+        $('.acc-content').not('#acc-content-2').removeClass('show');
+    });
+    $('.accordion .section-title-3').click(function() {
+        $('#acc-content-3').addClass('show');
+        $('.acc-content').not('#acc-content-3').removeClass('show');
+    });
+    $('.accordion .section-title-4').click(function() {
+        $('#acc-content-4').addClass('show');
+        $('.acc-content').not('#acc-content-4').removeClass('show');
+    });
+    $('.accordion .section-title-5').click(function() {
+        $('#acc-content-5').addClass('show');
+        $('.acc-content').not('#acc-content-5').removeClass('show');
+    });
+    $('.accordion .section-title-6').click(function() {
+        $('#acc-content-6').addClass('show');
+        $('.acc-content').not('#acc-content-6').removeClass('show');
+    });
+});
