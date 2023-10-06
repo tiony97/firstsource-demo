@@ -892,4 +892,286 @@ footer .footer-bar .privacy-links a {
 }
 footer .footer-bar .privacy-links a:last-child {
   margin-right: 0 !important;
+}
+
+/*MEDIA QUERIES*/
+/* SCSS Imports */
+.services-banner {
+  min-height: 70vh;
+  padding: 4vh 3vw;
+  background: url("../images/landing 7.svg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.services-banner * {
+  margin: 0;
+}
+.services-banner h5 {
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #0443F2;
+}
+.services-banner h2 {
+  font-size: 46px;
+  line-height: 58px;
+  font-weight: 500;
+  color: #FFFFFF;
+  width: 45%;
+  margin: 30px 0 !important;
+}
+.services-banner .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+}
+.services-banner .buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 60px;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+.services-banner .buttons a p {
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+.services-banner .buttons a img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: 20px;
+}
+.services-banner .buttons .btn-1 {
+  background-color: #0443F2;
+  border: 1px solid #0443F2;
+}
+.services-banner .buttons .btn-1:hover {
+  background-color: transparent;
+}
+.services-banner .buttons .btn-2 {
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+}
+.services-banner .buttons .btn-2:hover {
+  background-color: #0443F2;
+  border: 1px solid #0443F2;
+}
+
+.connect {
+  height: 10vh;
+  background-color: #F4F4F4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 3vw;
+}
+.connect .left {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.connect .left p {
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #0443F2;
+}
+.connect .left p span {
+  font-weight: 700 !important;
+  color: #000000 !important;
+}
+.connect .center {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.connect .center a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #0443F2;
+  padding: 0 10px;
+  text-decoration: none;
+  background: transparent;
+  transition: all 0.4s ease-in-out;
+}
+.connect .center a:hover {
+  background-color: #FFFFFF;
+  font-weight: 700;
+  border-bottom: 3px solid #0443F2;
+}
+.connect .right {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.connect .right a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 90%;
+  background: #0443F2;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+.connect .right a p {
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.connect .right a:hover p {
+  font-weight: 800;
+}
+
+.customer-relationships {
+  min-height: auto;
+  padding: 10vh 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.customer-relationships .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 30px;
+}
+.customer-relationships .wrapper .img-card {
+  min-height: 80vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.customer-relationships .wrapper .img-card .img-back {
+  height: 80%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+.customer-relationships .wrapper .img-card .card-content {
+  background-color: #FCFCFC;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  padding: 20px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.customer-relationships .wrapper .img-card .card-content * {
+  margin: 0;
+}
+.customer-relationships .wrapper .img-card .card-content h5 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #000000;
+}
+.customer-relationships .wrapper .img-card .card-content .line {
+  background: #0443F2;
+  width: 30% !important;
+  height: 4px !important;
+  margin: 30px 0 !important;
+}
+.customer-relationships .wrapper .img-card .card-content a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.customer-relationships .wrapper .img-card .card-content a p {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #0443F2;
+}
+.customer-relationships .wrapper .img-card .card-content a img {
+  width: 25px;
+  height: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: 10px;
+}
+.customer-relationships .wrapper .texts * {
+  margin: 0;
+}
+.customer-relationships .wrapper .texts h4 {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 20px !important;
+  margin-top: 6vh !important;
+}
+.customer-relationships .wrapper .texts p, .customer-relationships .wrapper .texts li {
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #464646;
+}
+.customer-relationships .wrapper .texts p {
+  margin-top: 30px !important;
+}
+
+.experiences {
+  min-height: auto;
+  padding: 10vh 3vw;
+  background: #000000;
+}
+.experiences .top-text * {
+  margin: 0;
+}
+.experiences .top-text h4 {
+  font-size: 34px;
+  line-height: 47px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-bottom: 20px !important;
+}
+.experiences .top-text p {
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-bottom: 20px !important;
+}
+.experiences .top-text p span {
+  color: #0443F2 !important;
+}
+.experiences .img-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 40px !important;
+}
+.experiences .img-box img {
+  width: 100%;
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.experiences .img-box .texts h4 {
+  font-size: 34px;
+  line-height: 47px;
+  font-weight: 500;
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */

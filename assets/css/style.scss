@@ -894,3 +894,13 @@ footer {
         }
     }
 }
+
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1024px){}
+@media only screen and (max-width: 720px){}
+@media only screen and (max-width: 540px){}
+
+
+/* SCSS Imports */
+@import "./services";
