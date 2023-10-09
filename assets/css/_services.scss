@@ -263,17 +263,170 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-top: 40px !important;
-        img {
+        .experience-img {
             width: 100%;
             height: 50vh;
             object-fit: cover;
         }
         .texts {
+            display: flex;
+            flex-direction: column;
+            *{margin: 0;}
             h4 {
                 font-size: 34px;
                 line-height: 47px;
                 font-weight: 500;
                 color: $text-clr-light;
+                margin-bottom: 30px;
+            }
+            //Tab Menu
+            .tab-menu {
+                display: block;
+                .tab-links {
+                    display: grid;
+                    grid-template-columns: repeat(4,1fr);
+                    .tab-link {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: none;
+                        border-bottom: 3px solid #313030;
+                        padding: 10px 0;
+                        background: transparent;
+                        cursor: pointer;
+                        font-family: mainFontNormal;
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: $text-clr-light;
+                        transition: all .3s ease-in-out;
+                    }
+                    .tab-link.selected-tab {
+                        color: $text-clr-accent !important;
+                        font-weight: 700;
+                        border-bottom-color: $accent-clr;
+                    }
+                }
+                .tab-content {
+                    //display: none;
+                    p {
+                        font-family: mainFontNormal;
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: $text-clr-light;
+                        margin: 30px 0;
+                    }
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 180px;
+                        height: 50px;
+                        text-decoration: none;
+                        background: $accent-clr;
+                        transition: all .4s ease-in-out;
+                        p {
+                            font-size: 15px;
+                            line-height: 26px;
+                            font-weight: 600;
+                            color: $text-clr-light;
+                        }
+                        img {
+                            width: 20px;
+                            height: 20px;
+                            object-fit: contain;
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.value {
+    min-height: 50vh;
+    padding: 10vh 3vw;
+    background: url(../images/landing\ 6.webp) center center no-repeat;
+    background-size: cover;
+    border-top: 2px solid $text-clr-light;
+    *{margin: 0;}
+    .wrapper {
+        width: 60%;
+    }
+    h4 {
+        font-size: 34px;
+        line-height: 47px;
+        font-weight: 500;
+        color: $text-clr-light;
+        margin-bottom: 20px !important;
+    }
+    p {
+        font-size: 15px;
+        line-height: 26px;
+        font-weight: 500;
+        color: $text-clr-light;
+        margin-bottom: 20px !important;
+        span {
+            color: $text-clr-accent !important;
+        }
+    }
+    //Tab Menu
+    .tab-menu {
+        display: block;
+        .tab-links {
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            .tab-link {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                border-bottom: 3px solid #313030;
+                padding: 10px 0;
+                background: transparent;
+                cursor: pointer;
+                font-family: mainFontNormal;
+                font-size: 15px;
+                line-height: 22px;
+                font-weight: 500;
+                color: $text-clr-light;
+                transition: all .3s ease-in-out;
+            }
+            .tab-link.selected-tab {
+                color: $text-clr-accent !important;
+                font-weight: 700;
+                border-bottom-color: $accent-clr;
+            }
+        }
+        .tab-content {
+            //display: none;
+            p {
+                font-family: mainFontNormal;
+                font-size: 15px;
+                font-weight: 500;
+                color: $text-clr-light;
+                margin: 30px 0;
+            }
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 200px;
+                height: 50px;
+                text-decoration: none;
+                background: $accent-clr;
+                transition: all .4s ease-in-out;
+                p {
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: $text-clr-light;
+                    margin-bottom: 30px !important;
+                }
+                img {
+                    width: 20px;
+                    height: 20px;
+                    object-fit: contain;
+                    margin-left: 20px;
+                }
             }
         }
     }

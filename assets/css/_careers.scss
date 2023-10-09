@@ -1,0 +1,103 @@
+//Career Banner
+.career-banner {
+    min-height: 70vh;
+    padding: 4vh 3vw; 
+    background: url('../images/landing\ 3.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    * {
+        margin: 0;
+    }
+    h3 {
+        font-size: 46px;
+        line-height: 58px;
+        font-weight: 500;
+        color: $text-clr-light;
+        width: 45%;
+        margin: 30px 0 !important;
+    }
+    .career-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 220px;
+        height: 50px;
+        text-decoration: none;
+        transition: all .4s ease-in-out;
+        background-color: $accent-clr;
+        border: 1px solid $accent-clr;
+        &:hover {
+            background-color: transparent;
+        }
+        p {
+            font-size: 15px;
+            line-height: 26px;
+            font-weight: 600;
+            color: $text-clr-light;
+        }
+        img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+            margin-left: 15px;
+        }
+    }
+}
+
+.welcome {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh 12vw; 
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 60px;
+        .texts {
+            display: block;
+            p {
+                font-size: 15px;
+                line-height: 26px;
+                font-weight: 500;
+                color: $text-clr-dark;
+                margin-bottom: 15px;
+                span {
+                    color: $text-clr-accent;
+                    font-weight: 600;
+                }
+            }
+            .career-btn {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                width: 200px;
+                height: 50px;
+                text-decoration: none;
+                transition: all .4s ease-in-out;
+                background-color: transparent;
+                border: none;
+                p {
+                    font-size: 15px;
+                    line-height: 26px;
+                    font-weight: 600;
+                    color: $text-clr-accent;
+                }
+                img {
+                    width: 20px;
+                    height: 20px;
+                    object-fit: contain;
+                    margin-left: 15px;
+                }
+            }
+        }
+        .welcome-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
